@@ -15,7 +15,7 @@ from locators import *
 
 
 # case 6.1
-def test_positive_logout(browser, login_form):
+def test_positive_logout(browser, login):
     # find and click burger menu:
     browser.find_element(*BURGER_BTN).click()
 
@@ -27,7 +27,7 @@ def test_positive_logout(browser, login_form):
 
 
 # case 6.2
-def test_positive_about_btn(browser, login_form):
+def test_positive_about_btn(browser, login):
     # find and click burger menu:
     browser.find_element(*BURGER_BTN).click()
 
@@ -41,7 +41,7 @@ def test_positive_about_btn(browser, login_form):
 
 
 # case 6.3
-def test_reset_app_state_positive(browser, login_form):
+def test_reset_app_state_positive(browser, login):
     # add two items to cart:
     browser.find_element(*ADD_TO_CART_BTN_1).click()
     browser.find_element(*ADD_BOLT_T_SHIRT_ITEM).click()

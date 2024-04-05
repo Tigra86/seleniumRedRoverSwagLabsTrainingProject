@@ -13,7 +13,7 @@ from locators import *
 
 
 # case 4.1
-def test_positive_order(browser, login_form):
+def test_positive_order(browser, login):
     # pick item and add it to cart:
     browser.find_element(*ADD_FLEECE_ITEM).click()
 

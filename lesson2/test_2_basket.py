@@ -16,7 +16,7 @@ from locators import *
 
 
 # case 2.1
-def test_add_to_cart(browser, login_form):
+def test_add_to_cart(browser, login):
     # add item to cart:
     browser.find_element(*ADD_TO_CART_BTN_1).click()
 
@@ -30,7 +30,7 @@ def test_add_to_cart(browser, login_form):
 
 
 # case 2.2
-def test_remove_from_cart(browser, login_form):
+def test_remove_from_cart(browser, login):
     # pick items and add to cart:
     browser.find_element(*ADD_BOLT_T_SHIRT_ITEM).click()
     browser.find_element(*ADD_RED_T_SHIRT_ITEM).click()
@@ -47,7 +47,7 @@ def test_remove_from_cart(browser, login_form):
 
 
 # case 2.3
-def test_add_item_from_item_card(browser, login_form):
+def test_add_item_from_item_card(browser, login):
 
     # find item link and click it:
     browser.find_element(*ITEM_TITLE_4).click()
@@ -69,7 +69,7 @@ def test_add_item_from_item_card(browser, login_form):
 
 
 # case 2.4
-def test_remove_item_from_item_card(browser, login_form):
+def test_remove_item_from_item_card(browser, login):
     # add item to cart:
     browser.find_element(*ADD_TO_CART_BTN_1).click()
 

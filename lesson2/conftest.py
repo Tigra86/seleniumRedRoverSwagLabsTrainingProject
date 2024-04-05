@@ -18,8 +18,8 @@ def browser():
     browser.quit()
 
 
-@pytest.fixture(scope="function", autouse=True)
-def login_form(browser):
+@pytest.fixture(scope="function")
+def login(browser):
     browser.get(MAIN_PAGE_URL)
     browser.find_element(*USERNAME_FIELD).send_keys(LOGIN)
     browser.find_element(*PASSWORD_FIELD).send_keys(PASSWORD)

@@ -15,7 +15,7 @@ from locators import *
 
 
 # case 5.1
-def test_a_to_z_filter(browser, login_form):
+def test_a_to_z_filter(browser, login):
     # sort items a-z before clicking on a-z filter:
     items_before1 = browser.find_elements(*CARD_ITEM_TITLE_3)
     before1 = []
@@ -39,7 +39,7 @@ def test_a_to_z_filter(browser, login_form):
 
 
 # case 5.2
-def test_z_to_a_filter(browser, login_form):
+def test_z_to_a_filter(browser, login):
     # sort items z-a before clicking on a-z filter:
     items_before2 = browser.find_elements(*CARD_ITEM_TITLE_3)
     before2 = []
@@ -63,7 +63,7 @@ def test_z_to_a_filter(browser, login_form):
 
 
 # case 5.3
-def test_high_to_low_filter(browser, login_form):
+def test_high_to_low_filter(browser, login):
     # sort items low-high before clicking on low-high filter:
     prices_before3 = browser.find_elements(*ITEM_PRICE_LIST)
     before3 = []
@@ -87,7 +87,7 @@ def test_high_to_low_filter(browser, login_form):
 
 
 # case 5.4
-def test_low_to_high_filter(browser, login_form):
+def test_low_to_high_filter(browser, login):
     # sort items low-high before clicking on low-high filter:
     prices_before4 = browser.find_elements(*ITEM_PRICE_LIST)
     before4 = []

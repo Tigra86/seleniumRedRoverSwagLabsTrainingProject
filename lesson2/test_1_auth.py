@@ -14,7 +14,7 @@ from locators import *
 
 
 # case 1.1
-def test_auth_positive(browser):
+def test_auth_positive(browser, login):
     assert browser.current_url == INVENTORY_URL
 
 

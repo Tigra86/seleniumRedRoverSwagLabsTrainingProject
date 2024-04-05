@@ -14,7 +14,7 @@ from locators import *
 
 
 # case 3.1
-def test_click_on_item_img(browser, login_form):
+def test_click_on_item_img(browser, login):
     # pick item description:
     item_desc1 = browser.find_element(*ITEM_DESC).text
 
@@ -28,7 +28,7 @@ def test_click_on_item_img(browser, login_form):
 
 
 # case 3.2
-def test_click_on_item_title(browser, login_form):
+def test_click_on_item_title(browser, login):
     # pick item description:
     item_desc1 = browser.find_element(*ITEM_DESC_1).text
 
